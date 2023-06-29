@@ -49,7 +49,7 @@ await asyncForEach( clubs, async stock => {
   tmpObj = {
     stockName: tmpStr,
     quote: tmpVle,
-    trend: elmTrend.includes('positive')
+    trend: elmTrend.includes('positive')? 'Positive':'Negative'
   };
   ticker.push(tmpObj);
 });
